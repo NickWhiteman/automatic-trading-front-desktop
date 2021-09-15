@@ -1,18 +1,16 @@
 const {app, BrowserWindow } = require('electron');
 const isDev = require('electron-is-dev');
-const path = require('path')
-
-require('@electron/remote/main').initialize();
+const path = require('path');
+const remoteMain = require('@electron/remote/main');
 
 const createWindow = () => {
     const windowApp = new BrowserWindow({
         width: 800,
         height: 600,
-        webPreferences: {
-            enabledRemoteMode: true,
-        }
     });
 
+    remoteMain.enable(windowApp.webContents);
+    
     windowApp.loadURL(
         isDev 
         ? 'http://localhost:3000'
