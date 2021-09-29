@@ -4,6 +4,7 @@
   * React
   * Redux-toolkit
   * Redux-saga
+  * Electron JS
   * Webpack
   * Bootstrap5
 #### //===============================
