@@ -1,0 +1,42 @@
+$backgroundColor: #3A414D;
+$head_panelBackground: #232932;
+$left_panelBackground: #202937;
+$dashboard_background: rgb(58, 65, 77);
+$footer_background: rgb(36, 38, 41);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.app {
+    background-color: $backgroundColor;
+
+    .app__head_panel{
+        background-color: $head_panelBackground;
+        margin-left: 0;
+        margin-top: 0;
+        height:75px;
+        width:1480px;
+    };
+
+    .app__left_patel{
+        position: absolute;
+        margin-left: 0;
+        width: 320px;
+        height: 950px;
+        background-color: $left_panelBackground;
+    };
+
+    .app__dashboard{
+        height:950px;
+        width: 1480px;
+        background-color: $dashboard_background;
+    };
+
+    .app__footer{
+        height: 16px;
+        width: 1480px;
+        background-color: $footer_background;
+    };
+};

@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  background-color: #3A414D;
+}
+.app .app__head_panel {
+  background-color: #232932;
+  margin-left: 0;
+  margin-top: 0;
+  height: 75px;
+  width: 1480px;
+}
+.app .app__left_patel {
+  position: absolute;
+  margin-left: 0;
+  width: 320px;
+  height: 950px;
+  background-color: #202937;
+}
+.app .app__dashboard {
+  height: 950px;
+  width: 1480px;
+  background-color: #3a414d;
+}
+.app .app__footer {
+  height: 16px;
+  width: 1480px;
+  background-color: #242629;
+}
