@@ -11,7 +11,7 @@
   margin-left: 0;
   margin-top: 0;
   height: 75px;
-  width: 1480px;
+  max-width: 1480px;
 }
 .app .app__left_patel {
   position: absolute;
@@ -22,11 +22,11 @@
 }
 .app .app__dashboard {
   height: 950px;
-  width: 1480px;
+  max-width: 1480px;
   background-color: #3a414d;
 }
 .app .app__footer {
   height: 16px;
-  width: 1480px;
+  max-width: 1480px;
   background-color: #242629;
 }
