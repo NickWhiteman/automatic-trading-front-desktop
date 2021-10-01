@@ -1,8 +1,8 @@
 import { FC } from "../../../types";
 import { TextInputType } from "./types";
 
-export const TextInput: FC<TextInputType> = () => {
+export const TextInput: FC<TextInputType> = (props) => {
   return (
-    <input className="text-input"></input>
+    <input {...props} className="text-input"></input>
   )
 };

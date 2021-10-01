@@ -1,7 +1,8 @@
-export interface TextInputType extends HTMLInputElement {
-  id: string
-  name: string
-  placeholder: string
+import { ReactNode } from "react";
+
+export interface TextInputType {
+  children?: ReactNode
+  type: string
 };
 
 export type FormType = {
@@ -13,5 +14,5 @@ export type FormType = {
 
 export type LabelType = {
   children: string
-  props?: any
+  htmlFor: string
 }

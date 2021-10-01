@@ -20,13 +20,19 @@ export const AuthForm: FunctionComponent = () => {
   return (
     <Form className='form__authorization' onSubmit={onSubmit}>
       <FieldWrapper>
-        <Label children='Login' />
+        <Label
+          children='Login'
+          htmlFor='login'/>
         <TextInput
+          type = 'text'
           {...register('login')}/>
       </FieldWrapper>
       <FieldWrapper>
-        <Label children='Password' />
+        <Label
+          children='Password'
+          htmlFor='password'/>
         <TextInput
+          type = 'text'
           {...register('password')}/>
       </FieldWrapper>
       <FormFooter>
