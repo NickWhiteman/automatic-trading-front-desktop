@@ -22,14 +22,12 @@ export const AuthForm: FunctionComponent = () => {
       <FieldWrapper>
         <Label children='Login' />
         <TextInput
-          {...register('login')}
-          placeholder='Login'/>
+          {...register('login')}/>
       </FieldWrapper>
       <FieldWrapper>
         <Label children='Password' />
         <TextInput
-          {...register('password')}
-          placeholder='Password' />
+          {...register('password')}/>
       </FieldWrapper>
       <FormFooter>
         <Button children='Enter' buttonMode='Success' />

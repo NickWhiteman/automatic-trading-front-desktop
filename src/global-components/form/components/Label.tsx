@@ -1,8 +1,8 @@
 import { FC } from "../../../types";
 import { LabelType } from "./types";
 
-export const Label: FC<LabelType> = ({ children, required }) => {
+export const Label: FC<LabelType> = ({ children, props }) => {
   return (
-    <label className='label-field'>{children}</label>
+    <label {...props} className='label-field'>{children}</label>
   )
 };

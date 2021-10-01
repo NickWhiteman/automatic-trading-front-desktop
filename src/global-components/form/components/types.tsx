@@ -1,5 +1,7 @@
 export interface TextInputType extends HTMLInputElement {
-  props?: any
+  id: string
+  name: string
+  placeholder: string
 };
 
 export type FormType = {
