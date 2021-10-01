@@ -8,7 +8,7 @@ import { TextInput } from "./components/TextInput";
 import { AuthFormField } from "./types";
 
 export const AuthForm: FunctionComponent = () => {
-  const { register, handleSubmit, formState: { errors } } = useForm<AuthFormField>({
+  const { register, handleSubmit } = useForm<AuthFormField>({
     defaultValues: {
       login: '',
       password: ''
