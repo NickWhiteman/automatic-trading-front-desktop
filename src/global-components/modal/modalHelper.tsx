@@ -1,8 +1,8 @@
-import { Authorization } from "../../pages/authorization/Authorization";
+import { AuthForm } from "../form/AuthForm";
 import { ModalContent } from "./types";
 
 const modalChildren: ModalContent = {
-  'authorization': <Authorization />,
+  'authorization': <AuthForm />,
 }
 
 export const contentGenerator = (contentMode: string) => {
