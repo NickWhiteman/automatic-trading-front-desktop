@@ -1,3 +1,4 @@
+import './style/style.css';
 import React from 'react';
 import { FC } from '../../types';
 import {
@@ -7,7 +8,6 @@ import {
 } from './components/modal-elements';
 import { contentGenerator } from './modalHelper';
 import { ModalProps } from './types';
-import './style/style.css';
 
 export const Modal: FC<ModalProps> = ({
   header,
