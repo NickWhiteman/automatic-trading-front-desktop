@@ -1,12 +1,12 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { IAppState } from "./types";
 
 const STORE_NAME = '@app';
-const initialState = {
+const initialState: IAppState = {
   isReady: false,
   isUnavailable: false,
   isUnauthorized: false,
   isLoginRedirect: true,
-  config: null,
 };
 
 const app = createSlice({
@@ -25,9 +25,6 @@ const app = createSlice({
     unauthorized: (state) => {
       state.isUnauthorized = true;
     },
-    setConfig: (state, action) => {
-      state.config = action.payload;
-    },
   },
 });
 
@@ -41,7 +38,6 @@ export const {
     init: appStartInit,
     unavailable: appUnavailable,
     unauthorized: appUnauthorized,
-    setConfig: appSetConfig,
   },
 } = app;
 
