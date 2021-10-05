@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 
-export interface TextInputType {
+export interface TextInputType  {
   children?: ReactNode
   type: string
 };

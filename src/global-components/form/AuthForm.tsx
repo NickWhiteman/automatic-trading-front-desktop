@@ -32,8 +32,8 @@ export const AuthForm: FunctionComponent = () => {
           children='Password'
           htmlFor='password'/>
         <TextInput
-          type = 'text'
-          {...register('password')}/>
+          {...register('password')}
+          type='text'/>
       </FieldWrapper>
       <FormFooter>
         <Button children='Enter' buttonMode='Success' />

@@ -1,3 +1,4 @@
+import { forwardRef } from "react";
 import { FC } from "../../../types";
 import { TextInputType } from "./types";
 

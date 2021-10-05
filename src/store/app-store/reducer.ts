@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { IAppState } from "./types";
 
 const STORE_NAME = '@app';
@@ -6,15 +6,15 @@ const initialState: IAppState = {
   isReady: false,
   isUnavailable: false,
   isUnauthorized: false,
-  isLoginRedirect: true,
+  isLoggerUser: true,
 };
 
 const app = createSlice({
   name: STORE_NAME,
   initialState,
   reducers: {
-    init: (state, action) => {
-      state.isLoginRedirect = action.payload.isLoginRedirect;
+    init: (state, {payload}: PayloadAction<boolean>) => {
+      state.isLoggerUser = payload;
     },
     finish: (state) => {
       state.isReady = true;
