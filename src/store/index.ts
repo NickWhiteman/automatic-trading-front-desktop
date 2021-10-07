@@ -1,5 +1,6 @@
-import { applyMiddleware, combineReducers, createStore } from "@reduxjs/toolkit";
+import { applyMiddleware, combineReducers, createStore, Reducer } from "@reduxjs/toolkit";
 import createSagaMiddleware from "redux-saga";
+import { routerReducer } from "react-router-redux";
 import { appReducer } from "./app-store/reducer";
 import { IAppState } from "./app-store/types";
 import { authReducer } from "./authorization-store/reducer";
@@ -12,6 +13,7 @@ export interface IRootState {
   appStore: IAppState
   modalStore: IModalState
   authStore: IAuthState
+  routing: any
 }
 
 const sagaMiddleware = createSagaMiddleware();
@@ -22,8 +24,8 @@ const store = createStore<IRootState, any, any, any>(
     appStore: appReducer,
     modalStore: modalReducer,
     authStore: authReducer,
+    routing: routerReducer,
   }),
-  undefined,
   applyMiddleware(...middleware)
 );
 
