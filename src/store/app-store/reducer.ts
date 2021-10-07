@@ -32,13 +32,8 @@ export const APP_START_INIT = app.actions.init.type;
 export const APP_FINISH_INIT = app.actions.finish.type;
 export const APP_UNAVAILABLE = app.actions.unavailable.type;
 
-export const {
-  actions: {
-    finish: appFinishInit,
-    init: appStartInit,
-    unavailable: appUnavailable,
-    unauthorized: appUnauthorized,
-  },
-} = app;
+export const appActions = {
+  ...app.actions
+};
 
 export const appReducer = app.reducer;
