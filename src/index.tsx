@@ -14,9 +14,7 @@ ReactDOM.render(
   <Provider store={store}>
     <Router history={history}>
       <React.StrictMode>
-        <Route path='/'>
-          <App />
-        </Route>
+        <Route path='/' component={App} />
       </React.StrictMode>
     </Router>
   </Provider>,

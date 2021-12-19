@@ -7,9 +7,9 @@ import {
   ModalContent
 } from './components/modal-elements';
 import { contentGenerator } from './modalHelper';
-import { ModalProps } from './types';
+import { IModalProps } from './types';
 
-export const Modal: FC<ModalProps> = ({
+export const Modal: FC<IModalProps> = ({
   header,
   contentMode
 }) => {

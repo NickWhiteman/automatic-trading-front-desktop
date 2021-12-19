@@ -1,6 +1,6 @@
 import { FC } from "../../types";
 
-export interface ModalProps {
+export interface IModalProps {
   header: string
   contentMode: string
 };
